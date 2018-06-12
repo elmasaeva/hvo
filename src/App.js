@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import {hot} from 'react-hot-loader'
 import './App.css';
 
-import {CitizenshipWhy, CitizenshipWho} from './Citizenship';
+import {CitizenshipWhy, CitizenshipWho, CitizenshipHow} from './Citizenship';
 import {TemporaryWhy, TemporaryWho} from './Temporary';
 import {ImmigrationWhy, ImmigrationWho} from './Immigration';
 
@@ -31,6 +31,10 @@ class App extends Component {
             <h1>{i18next.t('Citizenship')}</h1>
             <CitizenshipWhy />
             <CitizenshipWho />
+            <Block>
+                <h3>{i18next.t('How to do it?')}</h3>
+                <CitizenshipHow />
+            </Block>
         </Block>
 
         <Block>
